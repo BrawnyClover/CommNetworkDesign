@@ -3,7 +3,7 @@ from socket import *
 class Server:
     def __init__(self):
         self.BUFSIZE = 1024
-        self.PORT = 21
+        self.PORT = 8080
 
         self.listen_sock = socket(AF_INET, SOCK_STREAM) # Using TCP protocol
         self.listen_sock.bind(('', self.PORT)) # Localhost
